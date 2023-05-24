@@ -29,16 +29,16 @@ fun main() {
     val user4 = Usuario("Claudio")
 
     val conEd1 = ConteudoEducacional("Dominando Linguagem de Programção Kotlin", 13, Level.BASICO)
-    val conEd2 = ConteudoEducacional("Refinando Técnicas com Desafios em Kotlin",5, Level.INTERMEDIARIO)
+    val conEd2 = ConteudoEducacional("Refinando Técnicas com Desafios em Kotlin", 5, Level.INTERMEDIARIO)
     val conEd3 = ConteudoEducacional("Dominando Linguagem de Programção Java", 24, Level.INTERMEDIARIO)
     val conEd4 = ConteudoEducacional("Refinando Técnicas com Desafios em Java", 5, Level.DIFICIL)
 
-    val formacaoemKotlin = Formacao("Formação Kotlin", listOf(conEd1, conEd2))
+    val formacaoemKotlin = Formacao("Formação em Kotlin", listOf(conEd1, conEd2))
     formacaoKotlin.matricular(user1)
     formacaoKotlin.matricular(user2)
 
 
-    val formacaoemJava = Formacao("Formação Java", listOf(conEd3, conEd4))
+    val formacaoemJava = Formacao("Formação em Java", listOf(conEd3, conEd4))
     formacaoJava.matricular(user3)
     formacaoJava.matricular(user4)
 
@@ -50,7 +50,7 @@ fun main() {
         println("Conteudo: ${ConteudoEducacional.nome}  Duração:  ${ConteudoEducacional.duracao} horas  Level: ${ConteudoEducacional.nivel}")
     }
 
-    println( "Inscrições")
+    println("Inscrições")
     for (usuario in formacaoemKotlin.RetornaUsuarios()){
         println("Nome: ${usuario.nome}")
     }
@@ -62,7 +62,7 @@ fun main() {
         println("Conteudo: ${ConteudoEducacional.nome}  Duração:  ${ConteudoEducacional.duracao} horas  Level: ${ConteudoEducacional.nivel}")
     }
 
-    println( "Inscrições")
+    println("Inscrições")
     for (usuario in formacaoemJava.RetornaUsuarios()){
         println("Nome: ${usuario.nome}")
     }
